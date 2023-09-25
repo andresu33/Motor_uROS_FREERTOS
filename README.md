@@ -1,8 +1,8 @@
 # Proyecto de Integración: FreeRTOS, Micro-ROS y C++ para Control de Motor y Comunicación con PC
 
-![Logo del Proyecto](enlace_a_tu_imagen)
+![Logo del Proyecto](/images/logo.png)
 
-¡Bienvenido al repositorio del Proyecto de Integración que combina FreeRTOS, Micro-ROS y C++ para el control de motores y la comunicación con un PC! Este proyecto proporciona una solución completa y escalable para la gestión de tareas en tiempo real, la comunicación con dispositivos periféricos y la transmisión de datos a través de una red ROS 2.
+Bienvenido al repositorio del Proyecto de Integración entre FreeRTOS, Micro-ROS y C++ para el control de motores y la comunicación con ROS2. Este proyecto proporciona una solución completa y escalable para la gestión de tareas en tiempo real, la comunicación con dispositivos periféricos y la transmisión de datos a través de una red ROS 2.
 
 ## Descripción
 
@@ -25,14 +25,18 @@ El objetivo de este proyecto es demostrar la sinergia entre tres poderosas tecno
 - Documentación detallada, incluyendo guías de instalación, configuración y uso, para facilitar la adopción y contribución de la comunidad.
 
 ## Estructura del Repositorio
+![Estructura](/images/Estructura.png)
 
-- `/src`: Contiene el código fuente principal del proyecto, organizado en subdirectorios según las funcionalidades y módulos del sistema.
+- `/Motorp_FRTOS`: Carpeta principal del proyecto
+   - `/Libreria microRos`: Carpeta que contiene la librería microROS
+   - `/pico_micro_ros_SCARA.cpp`: Archivo principal (main)
+   - `/CmakeLists.txt`: Archivo de configuración CMake para integrar la librería microROS en el archivo principal
 
-- `/docs`: Documentación detallada, incluyendo guías de instalación, configuración y uso, así como ejemplos de implementación.
+- `/FreeRTOS`: Libreria del sistema operativo FreeRTOS
 
-- `/examples`: Ejemplos prácticos de aplicaciones que muestran cómo utilizar las funcionalidades de este proyecto en diferentes escenarios.
+- `/CmakeLists.txt`: Archivo de configuración CMake para integrar la librería FreeRTOS en todos los proyectos.
 
-- `/hardware`: Esquemáticos y diseño de hardware relacionado con la configuración del motor y la interconexión con el PC.
+- `/pico_sdk_import.cmake`:  Este archivo es utilizado para importar el SDK de Raspberry Pi Pico en el proyecto.
 
 ## Contribuciones
 
