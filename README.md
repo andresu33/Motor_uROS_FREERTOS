@@ -26,17 +26,17 @@ El objetivo de este proyecto es demostrar la sinergia entre tres poderosas tecno
 
 ## Estructura del Repositorio
 ![Estructura](/images/Estructura.png)
+- `/Motor_uROS_FREERTOS`: Carpeta principal donde se pueden crear proyectos.
+   - `/Motorp_FRTOS`: Carpeta del proyecto para controlar el Motor.
+      - `/Libreria microRos`: Carpeta que contiene la librería microROS
+      - `/pico_micro_ros_SCARA.cpp`: Archivo principal (main)
+      - `/CmakeLists.txt`: Archivo de configuración CMake para integrar la librería microROS en el archivo principal
 
-- `/Motorp_FRTOS`: Carpeta principal del proyecto
-   - `/Libreria microRos`: Carpeta que contiene la librería microROS
-   - `/pico_micro_ros_SCARA.cpp`: Archivo principal (main)
-   - `/CmakeLists.txt`: Archivo de configuración CMake para integrar la librería microROS en el archivo principal
+   - `/FreeRTOS`: Libreria del sistema operativo FreeRTOS
 
-- `/FreeRTOS`: Libreria del sistema operativo FreeRTOS
+   - `/CmakeLists.txt`: Archivo de configuración CMake para integrar la librería FreeRTOS en todos los proyectos.
 
-- `/CmakeLists.txt`: Archivo de configuración CMake para integrar la librería FreeRTOS en todos los proyectos.
-
-- `/pico_sdk_import.cmake`:  Este archivo es utilizado para importar el SDK de Raspberry Pi Pico en el proyecto.
+   - `/pico_sdk_import.cmake`:  Este archivo es utilizado para importar el SDK de Raspberry Pi Pico en el proyecto.
 
 ## Contribuciones
 
